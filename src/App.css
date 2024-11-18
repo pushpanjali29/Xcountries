@@ -1,24 +1,28 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.country-list {
+.country-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
-  overflow-y: scroll;
-}
-
-.country {
-  display: flex;
-  align-items: center;
-  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .flag {
-  width: 50px;
-  height: 30px;
-  margin-right: 10px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
 }
